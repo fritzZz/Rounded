@@ -3,7 +3,7 @@ Rounded
 
 Rounded is a simple Mootools class that help you to obtain round corners on each element on your page.
 
-![Screenshot](http://franziale.netsons.org/MenuSelector/screen.png)
+![Screenshot](http://franziale.netsons.org/Rounded/screen.png)
 
 How to Use
 ----------
