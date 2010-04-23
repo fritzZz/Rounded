@@ -1,7 +1,7 @@
-name:  Rounded
+name:  SlidingBox
 author:  fritzzz
 current:  0.9
-category:  Effects
-tags:  [round,corners]
+category:  Interface
+tags:  [box,sliding]
 docs:  http://franziale.blogspot.com
-demo:  http://franziale.netsons.org/Rounded/index.html
+demo:  http://franziale.netsons.org/SlidingBox/index.html

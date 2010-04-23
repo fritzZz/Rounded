@@ -1,41 +1,29 @@
-Rounded
+SlidingBox
 ===========
 
-Rounded is a simple Mootools class that help you to obtain round corners on each element on your page.
+SlidingBox is a simple Mootools class that help you to obtain sliding box that sobstitute divs in your page.
 
-![Screenshot](http://franziale.netsons.org/Rounded/screen.png)
+![Screenshot](http://franziale.netsons.org/SlidingBox/screen.png)
 
 How to Use
 ----------
 
-It's very easy to use this component. You can use it on each object in your document.
-In this sample I use Rounded to obtain rounded corners on my div. In the first div I use the default radius (10px),
-in the second sample, in the second I specify a different value (5px)
+It's very easy to use this component. You can use it on each div in your document.
+
 ### HTML
-	<div id="first" style="background-color : #cccccc; width : 200px;height:30px; padding-left:1em"> 
-		First sample (default corner)
-	</div>
-	<div id="second" style="background-color : #cccccc; width : 200px;height:30px; padding-left:1em"> 
-		Second sample (corner 5px)
+	<div id="mybox">
+		<h2>My Box Sample</h2>
+		content
 	</div>
 
 
-You can initialize corners on 'domready' event of your document
+You can initialize sliding box on 'domready' event of your document
 
 ### Javascript
-	window.addEvent('domready', function() {
-		// round first div
-		var myRound = new Rounded($$("#first"));
-		// select radius in px
-		var opt = {
-	    	radius : "5px"
-	    }
-		// round second div
-		var myRound = new Rounded($$("#second"),opt);
+	window.addEvent('domready', function(){
+		var mySlider = new SlidingBox("mybox");
 	});
 	
 The possible options are the follows :
 
-	radius: radius in pixel for your rounded corners,
-    selector: default selector if not specified,
-    cornered: css class used after transformation
+	openOnStart: default true, if false the div will be close when you're page is loaded

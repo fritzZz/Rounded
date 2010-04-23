@@ -1,35 +1,22 @@
 <html>
 	<head>
-		<title>Rounded - sample
+		<title>SlidingBox - sample
 		</title>
-		<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+		<link href="css/box.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" language="JavaScript" src="js/mootools-1.2.1-core-nc.js"></script>  
 		<script type="text/javascript" language="JavaScript" src="js/mootools-1.2-more.js"></script>
-		<script type="text/javascript" language="JavaScript" src="js/mootools-1.2-Rounded.js"></script>  
+		<script type="text/javascript" language="JavaScript" src="js/mootools-1.2-Rounded.js"></script>
+		<script type="text/javascript" language="JavaScript" src="js/mootools-1.2-SlidingBox.js"></script>  
 	</head>
 	<body>
-		<div id="first" style="background-color : #cccccc; width : 200px;height:30px; padding-left:1em"> 
-			First sample (default corner)
+		<div id="mybox">
+			<h2>My Box Sample</h2>
+			content
 		</div>
 		<script>
-			window.addEvent('domready', function() {
-				// round menu item
-				var myRound = new Rounded($$("#first"));
+			window.addEvent('domready', function(){
+				var mySlider = new SlidingBox("mybox");
 			});
 		</script>
-		<p></p>
-		<div id="second" style="background-color : #cccccc; width : 200px;height:30px; padding-left:1em"> 
-			Second sample (corner 5px)
-		</div>
-		<script>
-			window.addEvent('domready', function() {
-				// select radius in px
-				var opt = {
-                	radius : "5px"
-                }
-				// round menu item
-				var myRound = new Rounded($$("#second"),opt);
-			});
-		</script> 
 	</body>
 </html>
